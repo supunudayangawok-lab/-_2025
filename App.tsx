@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import { Horoscope, ZodiacSign, PersonalDetails, PersonalizedHoroscope } from './types';
 import { generateHoroscope, generatePersonalizedHoroscope } from './services/geminiService';
-import Header from './components/Header';
+import Header from './Header';
 import ZodiacSelector from './components/ZodiacSelector';
 import HoroscopeDisplay from './components/HoroscopeDisplay';
 import Loader from './components/Loader';
