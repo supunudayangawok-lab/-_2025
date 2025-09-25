@@ -53,7 +53,10 @@ const PersonalizedDisplay: React.FC<PersonalizedDisplayProps> = ({ details, horo
     <div className="bg-gray-900/50 backdrop-blur-sm border border-indigo-500/20 rounded-xl p-6 w-full max-w-3xl space-y-6 animate-fade-in">
       <div className="text-center border-b border-indigo-500/20 pb-4">
         <h2 className="text-3xl md:text-4xl font-bold text-white">{details.name} ගේ ජන්ම පත්‍ර විಶ್ලේෂණය</h2>
-        <p className="text-indigo-200 mt-2">ඔබේ උපන් තොරතුරු මත පදනම් වූ සත්‍ය විග්‍රහයක්</p>
+        <div className="mt-3 bg-indigo-900/40 inline-block px-4 py-1 rounded-full">
+            <p className="text-xl font-semibold text-purple-300">ලග්නය: {horoscope.lagnaya}</p>
+        </div>
+        <p className="text-indigo-200 mt-3">ඔබේ උපන් තොරතුරු මත පදනම් වූ සත්‍ය විග්‍රහයක්</p>
       </div>
       <div className="space-y-4">
         <HoroscopeSection icon={<IntroductionIcon />} title="හැඳින්වීම" text={horoscope.introduction} />

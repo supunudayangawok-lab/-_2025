@@ -1,4 +1,3 @@
-
 // FIX: Updated ZodiacSignName to use Sinhala names to match the data in constants.ts and fix type errors.
 export type ZodiacSignName =
   | 'මේෂ'
@@ -35,6 +34,7 @@ export interface PersonalDetails {
 }
 
 export interface PersonalizedHoroscope {
+  lagnaya: string;
   introduction: string;
   personalityTraits: string;
   lifePath: string;
